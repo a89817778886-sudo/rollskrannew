@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инженерам - РОЛЛС КРАН</title>
+    <meta name="description" content="Техническая документация, калькулятор подбора крановой системы, чертежи, методики расчета и ответы на вопросы для инженеров.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- ... шапка ... -->
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Инженерам</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> / <span>Инженерам</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="engineers-full">
+            <div class="container">
+                <!-- Калькулятор -->
+                <div id="calculator" class="calculator-section">
+                    <h2 class="section-title">Калькулятор подбора крановой системы</h2>
+                    <p class="section-subtitle">Предварительный расчет для ориентировочной оценки</p>
+                    
+                    <div class="calculator-card">
+                        <div class="calculator-form">
+                            <div class="form-grid">
+                                <div class="form-field">
+                                    <label class="field-label">Грузоподъемность (кг) *</label>
+                                    <input type="number" id="capacity" class="field-input" placeholder="например, 500">
+                                </div>
+                                <div class="form-field">
+                                    <label class="field-label">Пролет (м) *</label>
+                                    <input type="number" id="span" class="field-input" placeholder="например, 6">
+                                </div>
+                                <div class="form-field">
+                                    <label class="field-label">Высота подъема (м)</label>
+                                    <input type="number" id="height" class="field-input" placeholder="например, 4">
+                                </div>
+                                <div class="form-field">
+                                    <label class="field-label">Скорость (м/мин)</label>
+                                    <input type="number" id="speed" class="field-input" placeholder="например, 8">
+                                </div>
+                            </div>
+
+                            <button id="calculateBtn" class="btn btn-primary calculator-btn">Рассчитать</button>
+
+                            <div id="result" class="calculation-result" style="display: none;">
+                                <!-- Результат появится здесь -->
+                            </div>
+                            
+                            <p class="result-note">* Для точного расчета обратитесь к нашим инженерам. Калькулятор дает предварительную оценку.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Документация -->
+                <div class="docs-section">
+                    <h2 class="section-title">Техническая документация</h2>
+                    <p class="section-subtitle">Каталоги, методики расчета, чертежи и инструкции</p>
+                    
+                    <div class="docs-grid">
+                        <div class="docs-category">
+                            <h3 class="docs-category-title">Каталоги</h3>
+                            <div class="docs-list">
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Каталог технических решений</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 12.5 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Каталог внешний токоподвод</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 5.3 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Каталог троллейный шинопровод</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 4.8 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="docs-category">
+                            <h3 class="docs-category-title">Методики расчета</h3>
+                            <div class="docs-list">
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Методика расчета крановых систем</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 3.2 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Таблицы нагрузок и прогибов</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 1.8 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Опросные листы</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 2.1 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="docs-category">
+                            <h3 class="docs-category-title">Инструкции и чертежи</h3>
+                            <div class="docs-list">
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Инструкция по монтажу ЛКС</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 5.4 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Руководство по эксплуатации</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 4.1 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="doc-item" download>
+                                    <div class="doc-info">
+                                        <svg class="doc-icon" viewBox="0 0 24 24">
+                                            <path d="M6 22a2 2 0 01-2-2V4a2 2 0 012-2h8a2.4 2.4 0 011.704.706l3.588 3.588A2.4 2.4 0 0120 8v12a2 2 0 01-2 2z" />
+                                            <path d="M14 2v5a1 1 0 001 1h5" />
+                                            <path d="M10 9H8M16 13H8M16 17H8" />
+                                        </svg>
+                                        <span class="doc-name">Сборочные чертежи консольных кранов</span>
+                                    </div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">PDF, 8.7 MB</span>
+                                        <svg class="download-icon" viewBox="0 0 24 24">
+                                            <path d="M12 15V3M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div id="faq" class="faq-section">
+                    <h2 class="section-title">Часто задаваемые вопросы</h2>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Какие нормативные документы регулируют крановые системы?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer" style="display: none;">
+                                <p>Основные документы: ФНП "Правила безопасности опасных производственных объектов, на которых используются подъемные сооружения", ГОСТ 27555-87, ГОСТ 3242-79, а также технические регламенты Таможенного союза ТР ТС 010/2011.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Как выбрать тип крановой системы?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer" style="display: none;">
+                                <p>Выбор зависит от задач: для обслуживания всей площади цеха подходят мостовые краны, для отдельных рабочих мест - консольные, для ограниченного пространства - микро-краны. Наши инженеры помогут подобрать оптимальное решение.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Какие сроки изготовления крановой системы?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer" style="display: none;">
+                                <p>Стандартные сроки изготовления от 2 до 8 недель в зависимости от сложности. Для типовых решений возможны сокращенные сроки. Точные сроки определяются после согласования технического задания.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Нужно ли регистрировать кран в Ростехнадзоре?</span>
+                                <svg class="faq-chevron" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer" style="display: none;">
+                                <p>Краны грузоподъемностью свыше 1000 кг подлежат регистрации. Наши специалисты помогут с оформлением всей необходимой документации и постановкой на учет.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- ... подвал ... -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
